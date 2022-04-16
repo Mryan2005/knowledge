@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Run a one-line script
-       run: zip $GITHUB_WORKSPACE/mindmap.zip *
+       run: |
+        zip -r $GITHUB_WORKSPACE/mindmap.zip *
      - name: Create Release
        id: create_release
        uses: actions/create-release@v1
