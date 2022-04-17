@@ -10,7 +10,7 @@ jobs:
     steps:
      - name: Run a one-line script
        run: |
-        zip -r $GITHUB_WORKSPACE/mindmap.zip *
+        zip -r $GITHUB_WORKSPACE/mindmap.zip $GITHUB_WORKSPACE
      - name: Create Release
        id: create_release
        uses: actions/create-release@v1
