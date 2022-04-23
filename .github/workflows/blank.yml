@@ -17,8 +17,8 @@ jobs:
        env:
          GITHUB_TOKEN: ${{ secrets.TOKEN }}
        with:
-         tag_name: ${{ github.run_id }}.${{ github.run_number }} weekly
-         release_name: ${{ github.run_id }}.${{ github.run_number }} weekly
+         tag_name: ${{ github.run_id }}.${{ github.run_number }}.weekly
+         release_name: Release ${{ github.run_id }}.${{ github.run_number }}.weekly
          draft: false
          prerelease: false
      - name: Upload Release Asset
